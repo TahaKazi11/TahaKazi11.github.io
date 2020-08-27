@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chartset="utf-8" />
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Projects</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="images/toronto.png">Resume</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="https://github.com/TahaKazi11">Github</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            <div>TAHA KAZI</div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+          <div class="portfolio-item-wrapper">
+
+            <div class="portfolio-img-background" style="background-image:url(images/food_tracker.png)">
+              </div>
+
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="https://github.com/TahaKazi11/Food-Tracker-WebApp"><img src="images/logos/gitty.png"></a>
+              </div>
+              <div class="subtitle">
+                 A foodtracker web application, which tracks all types of food offered on the university campus, created using Angular with Typescript, MongoDB, Java and REST API.
+          </div>
+
+          </div>
+
+
+
+          </div>
+          <div class="portfolio-item-wrapper">
+
+            <div class="portfolio-img-background" style="background-image:url(images/bookmarkerappdemo.png)">
+              </div>
+
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="https://github.com/TahaKazi11/bookmarker-app"><img src="images/logos/gitty.png"></a>
+              </div>
+              <div class="subtitle">
+                 A Website Bookmarker web-application, built using Javascript and HTML. Used pre-created CSS templates to make the web-app look nice.
+          </div>
+
+        </div>
+
+
+
+      </div>
+          <div class="portfolio-item-wrapper">
+
+            <div class="portfolio-img-background" style="background-image:url(images/userdemo.png)">
+              </div>
+
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <a href="https://github.com/TahaKazi11/Student-Marksheet-Database-Information-System"><img src="images/logos/gitty.png"></a>
+              </div>
+              <div class="subtitle">
+                Created a Student Marksheet Information System using C#, with Microsoft Access as the database to retrieve and store data.
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    <div class="portfolio-item-wrapper">
+
+      <div class="portfolio-img-background" style="background-image:url(images/storyimage.png)">
+        </div>
+
+        <div class="img-text-wrapper">
+          <div class="logo-wrapper">
+            <a href="https://github.com/TahaKazi11/gamemaker-competition-project"><img src="images/logos/gitty.png"></a>
+        </div>
+        <div class="subtitle">
+           A 2D platformer horror game called Amnesia: The Fatal Dream, using the GameMaker engine and mostly my knowledge of C#.
+    </div>
+
+  </div>
+
+
+
+  </div>
+  <div class="portfolio-item-wrapper">
+
+    <div class="portfolio-img-background" style="background-image:url(images/websitedemo.png)">
+      </div>
+
+      <div class="img-text-wrapper">
+        <div class="logo-wrapper">
+          <a href=""><img src="images/logos/gitty.png"></a>
+      </div>
+      <div class="subtitle">
+         Created a personal portfolio website using HTML5, CSS, and a bit of Javascript to implement the darkening effects on the "Projects" portion.
+  </div>
+
+</div>
+
+</div>
+
+<div class="portfolio-item-wrapper">
+
+  <div class="portfolio-img-background" style="background-image:url(images/coming.png)">
+    </div>
+
+    <div class="img-text-wrapper">
+      <div class="logo-wrapper">
+
+    </div>
+    <div class="subtitle">
+       MORE PROJECTS COMING SOON!
+</div>
+
+</div>
+
+
+
+</div>
+
+
+    </div>
+    </div>
+  </body>
+  <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add('img-darken');
+      })
+      portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+      })
+    })
+  </script>
+  </html>
